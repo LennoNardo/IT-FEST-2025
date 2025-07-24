@@ -2,7 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Valorant-inspired base styles */
+body {
+    background: linear-gradient(135deg, #16213d 0%, #222222 100%);
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+}
+
 ::-webkit-scrollbar{
     display: none;
     scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+    width: 8px;
+    display: block;
+}
+
+::-webkit-scrollbar-track {
+    background: #16213d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #e94560, #bcb4ff);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #d63851, #a098e8);
 }

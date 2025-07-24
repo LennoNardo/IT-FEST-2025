@@ -34,11 +34,11 @@ const Home = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <div className='bg-gradient-to-br bg-gray-900'>
+        <div className='relative' style={{background: 'linear-gradient(135deg, #16213d 0%, #222222 100%)'}}>
             <Helmet>
                 <meta name="description" content="IT FESTIVAL 2024 Himpunan Mahasiswa Jurusan Manajemen Informatika Politeknik Negeri Sriwijaya" />
-                <meta name="keywords" content="IT FESTIVAL 2024" />
-                <title>IT FESTIVAL 2024</title>
+                <meta name="keywords" content="IT FESTIVAL 2025" />
+                <title>IT FESTIVAL 2025</title>
                 <link rel="icon" href={Logo} />
             </Helmet>
             <Hero countdownTimeStamp={endCountdown} />
@@ -58,168 +58,174 @@ const Home = () => {
 
             {/* Maskot Section */}
 
-            <div data-aos="fade-up" data-aos-duration="1000" className="flex sm:flex-row flex-col justify-evenly items-center bg-gray-900">
-                <div className="">
-                    <p className='comfortaa text-center text-white text-2xl sm:text-5xl'>Introducing,  <span className='zaptron'>Sparco</span> </p>
-                    <p className='text-gray-400 text-center sm:text-left mb-2 sm:mb-0 comfortaa text-xs'>Official Mascot IT FESTIVAL {currentYear}</p>
-                    <p className='comfortaa text-gray-200 hidden sm:block  w-96'>Robot yang memiliki kemampuan berpikir kreatif, semangat tinggi, pintar berkomunikasi, dan memiliki daya tarik yang luar biasa.</p>
+            <div data-aos="fade-up" data-aos-duration="1000" className="flex sm:flex-row flex-col justify-evenly items-center py-20 relative">
+                <div className="geometric-decoration top-10 left-10" style={{animationDelay: '2s'}}></div>
+                <div className="text-center sm:text-left z-10">
+                    <p className='valorant-font text-center text-white text-3xl sm:text-6xl mb-4'>
+                        Introducing, <span className='text-glow-pink text-pink-400'>Sparco</span>
+                    </p>
+                    <p className='text-lavender text-center sm:text-left mb-4 sm:mb-6 comfortaa text-sm sm:text-base'>Official Mascot IT FESTIVAL 2025</p>
+                    <p className='comfortaa text-gray-200 hidden sm:block w-96 leading-relaxed'>Robot yang memiliki kemampuan berpikir kreatif, semangat tinggi, pintar berkomunikasi, dan memiliki daya tarik yang luar biasa.</p>
                 </div>
-                <div className=''>
-                    <img src={Maskot} className='sm:w-80 w-48 '  alt="" />
+                <div className='relative z-10'>
+                    <img src={Maskot} className='sm:w-80 w-48 glow-lavender rounded-lg' alt="" />
                 </div>
             </div>
 
             {/* End Maskot Section */}
 
             {/* Timeline Section */}
-            <p className='text-center comfortaa text-gray-200 mt-10 sm:mt-20 text-xl sm:text-4xl'><span className='bg-gradient-to-br from-gray-500 via-gray-300 to-gray-200 rounded-lg text-md px-10 sm:px-24 py-1 text-gray-900'>timeline</span></p>
-            <div className='min-h-screen flex items-center bg-gray-900'>
+            <div className="text-center mt-10 sm:mt-20 mb-10">
+                <span className='valorant-font text-2xl sm:text-4xl text-white valorant-border inline-block px-8 sm:px-16 py-3 glow-pink'>TIMELINE</span>
+            </div>
+            <div className='min-h-screen flex items-center relative'>
+                <div className="geometric-decoration top-20 right-10" style={{animationDelay: '4s'}}></div>
                 <div className="container mx-auto w-full h-full">
                     <div className="relative wrap overflow-hidden p-10 h-full">
                         <div
-                            className="border-2-2 absolute border-opacity-20 border-gray-200 h-full border"
+                            className="border-2 absolute h-full border-pink-500 opacity-50"
                             style={{ left: "50%" }}
                         />
                         {/* right timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between items-center w-full right-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto font-semibold text-lg text-white">1</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-pink-500 to-purple-400 shadow-xl w-10 h-10 rounded-full glow-pink">
+                                <h1 className="mx-auto font-semibold text-lg text-white valorant-font">1</h1>
                             </div>
-                            <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-gray-800 text-center text-xs sm:text-xl">Pembukaan Pendaftaran Perlombaan, Seminar dan Pelatihan</h3>
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-pink">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Pembukaan Pendaftaran Perlombaan, Seminar dan Pelatihan</h3>
                                 <p className="text-xs text-center sm:text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
-                                    05 Agustus {currentYear}
+                                    05 Agustus 2025
                                 </p>
                             </div>
                         </div>
                         {/* left timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto text-white font-semibold text-lg">2</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-purple-400 to-pink-500 shadow-xl w-10 h-10 rounded-full glow-lavender">
+                                <h1 className="mx-auto text-white font-semibold text-lg valorant-font">2</h1>
                             </div>
-                            <div className="order-1 bg-gray-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-white text-center text-xs sm:text-xl">Penutupan Pendaftaran Peserta Seminar dan Pelatihan</h3>
-                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100">
-                                    08 September {currentYear}
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-lavender">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Penutupan Pendaftaran Peserta Seminar dan Pelatihan</h3>
+                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-lavender">
+                                    08 September 2025
                                 </p>
                             </div>
                         </div>
                         {/* right timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between items-center w-full right-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto font-semibold text-lg text-white">3</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-pink-500 to-purple-400 shadow-xl w-10 h-10 rounded-full glow-pink">
+                                <h1 className="mx-auto font-semibold text-lg text-white valorant-font">3</h1>
                             </div>
-                            <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-gray-800 text-center text-xs sm:text-xl">Pembukaan Acara IT Festival {currentYear} dan Seminar</h3>
-                                <p className="text-xs text-center sm:text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
-                                    16 September {currentYear}
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-pink">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Pembukaan Acara IT Festival 2025 dan Seminar</h3>
+                                <p className="text-xs text-center sm:text-sm leading-snug tracking-wide text-pink-300">
+                                    16 September 2025
                                 </p>
                             </div>
                         </div>
                         {/* left timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto text-white font-semibold text-lg">4</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-purple-400 to-pink-500 shadow-xl w-10 h-10 rounded-full glow-lavender">
+                                <h1 className="mx-auto text-white font-semibold text-lg valorant-font">4</h1>
                             </div>
-                            <div className="order-1 bg-gray-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-white text-center text-xs sm:text-xl">Pelatihan Android dan Web Development</h3>
-                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100">
-                                    17 - 20 September {currentYear}
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-lavender">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Pelatihan Android dan Web Development</h3>
+                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-lavender">
+                                    17 - 20 September 2025
                                 </p>
                             </div>
                         </div>
                         {/* right timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between items-center w-full right-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto font-semibold text-lg text-white">5</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-pink-500 to-purple-400 shadow-xl w-10 h-10 rounded-full glow-pink">
+                                <h1 className="mx-auto font-semibold text-lg text-white valorant-font">5</h1>
                             </div>
-                            <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-gray-800 text-center text-xs sm:text-xl">Penutupan Pendaftaran Lomba</h3>
-                                <p className="text-xs text-center sm:text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
-                                    25 September {currentYear}
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-pink">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Penutupan Pendaftaran Lomba</h3>
+                                <p className="text-xs text-center sm:text-sm leading-snug tracking-wide text-pink-300">
+                                    25 September 2025
                                 </p>
                             </div>
                         </div>
                         {/* left timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto text-white font-semibold text-lg">6</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-purple-400 to-pink-500 shadow-xl w-10 h-10 rounded-full glow-lavender">
+                                <h1 className="mx-auto text-white font-semibold text-lg valorant-font">6</h1>
                             </div>
-                            <div className="order-1 bg-gray-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-white text-center text-xs sm:text-xl">Technical Meeting Lomba (Photography, Poster Design, & Web Design)</h3>
-                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100">
-                                    27 September {currentYear}
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-lavender">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Technical Meeting Lomba (Photography, Poster Design, & Web Design)</h3>
+                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-lavender">
+                                    27 September 2025
                                 </p>
                             </div>
                         </div>
                         {/* right timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between items-center w-full right-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto font-semibold text-lg text-white">7</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-pink-500 to-purple-400 shadow-xl w-10 h-10 rounded-full glow-pink">
+                                <h1 className="mx-auto font-semibold text-lg text-white valorant-font">7</h1>
                             </div>
-                            <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-gray-800 text-center text-xs sm:text-xl">Technical Meeting Mobile Legend</h3>
-                                <p className="text-xs text-center sm:text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
-                                    28 September {currentYear}
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-pink">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Technical Meeting Mobile Legend</h3>
+                                <p className="text-xs text-center sm:text-sm leading-snug tracking-wide text-pink-300">
+                                    28 September 2025
                                 </p>
                             </div>
                         </div>
                         {/* left timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto text-white font-semibold text-lg">8</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-purple-400 to-pink-500 shadow-xl w-10 h-10 rounded-full glow-lavender">
+                                <h1 className="mx-auto text-white font-semibold text-lg valorant-font">8</h1>
                             </div>
-                            <div className="order-1 bg-gray-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-white text-center text-xs sm:text-xl">Lomba Mobile Legends</h3>
-                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100">
-                                    29 September {currentYear}
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-lavender">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Lomba Mobile Legends</h3>
+                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-lavender">
+                                    29 September 2025
                                 </p>
                             </div>
                         </div>
                         {/* right timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between items-center w-full right-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto font-semibold text-lg text-white">9</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-pink-500 to-purple-400 shadow-xl w-10 h-10 rounded-full glow-pink">
+                                <h1 className="mx-auto font-semibold text-lg text-white valorant-font">9</h1>
                             </div>
-                            <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-gray-800 text-center text-xs sm:text-xl">Pengumpulan Karya Lomba</h3>
-                                <p className="text-xs text-center sm:text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
-                                    30 September {currentYear}
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-pink">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Pengumpulan Karya Lomba</h3>
+                                <p className="text-xs text-center sm:text-sm leading-snug tracking-wide text-pink-300">
+                                    30 September 2025
                                 </p>
                             </div>
                         </div>
                         {/* left timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto text-white font-semibold text-lg">10</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-purple-400 to-pink-500 shadow-xl w-10 h-10 rounded-full glow-lavender">
+                                <h1 className="mx-auto text-white font-semibold text-lg valorant-font">10</h1>
                             </div>
-                            <div className="order-1 bg-gray-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-white text-center text-xs sm:text-xl">Penjurian Lomba (Photography & Poster Design)</h3>
-                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100">
-                                    5 Oktober {currentYear}
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-lavender">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Penjurian Lomba (Photography & Poster Design)</h3>
+                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-lavender">
+                                    5 Oktober 2025
                                 </p>
                             </div>
                         </div>
                         {/* right timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between items-center w-full right-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto font-semibold text-lg text-white">11</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-pink-500 to-purple-400 shadow-xl w-10 h-10 rounded-full glow-pink">
+                                <h1 className="mx-auto font-semibold text-lg text-white valorant-font">11</h1>
                             </div>
-                            <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-gray-800 text-center text-xs sm:text-xl">Penjurian Lomba Web Design</h3>
-                                <p className="text-xs text-center sm:text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
-                                    06 Oktober {currentYear}
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-pink">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Penjurian Lomba Web Design</h3>
+                                <p className="text-xs text-center sm:text-sm leading-snug tracking-wide text-pink-300">
+                                    06 Oktober 2025
                                 </p>
                             </div>
                         </div>
@@ -239,13 +245,13 @@ const Home = () => {
                         {/* Left timeline */}
                         <div data-aos="fade-up" data-aos-duration="1000" className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                             <div className="order-1 w-5/12" />
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto font-semibold text-lg text-white">12</h1>
+                            <div className="z-20 flex items-center order-1 bg-gradient-to-r from-purple-400 to-pink-500 shadow-xl w-10 h-10 rounded-full glow-lavender">
+                                <h1 className="mx-auto font-semibold text-lg text-white valorant-font">12</h1>
                             </div>
-                            <div className="order-1 bg-gray-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                                <h3 className="mb-3 font-bold text-white text-center text-xs sm:text-xl">Penutupan Acara IT Festival {currentYear} & Pengumuman Pemenang</h3>
-                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-gray-300 text-opacity-100">
-                                    10 Oktober {currentYear}
+                            <div className="order-1 valorant-card shadow-xl w-5/12 px-6 py-4 glow-lavender">
+                                <h3 className="mb-3 valorant-font text-white text-center text-xs sm:text-lg">Penutupan Acara IT Festival 2025 & Pengumuman Pemenang</h3>
+                                <p className="text-xs text-center sm:text-sm font-medium leading-snug tracking-wide text-lavender">
+                                    10 Oktober 2025
                                 </p>
                             </div>
                         </div>
@@ -255,8 +261,11 @@ const Home = () => {
             {/* End Timeline Section */}
 
             {/* powered by */}
-            <div data-aos="fade-up" data-aos-duration="1000" className="bg-gray-900 mb-12 justify-center">
-                <p className='text-center comfortaa text-gray-200 mt-10 text-xl sm:text-4xl'><span className='bg-gradient-to-br from-gray-500 via-gray-300 to-gray-200 rounded-lg text-md px-10 py-1 text-gray-900'>powered by</span></p>
+            <div data-aos="fade-up" data-aos-duration="1000" className="mb-12 justify-center py-20 relative">
+                <div className="geometric-decoration bottom-10 right-20" style={{animationDelay: '1s'}}></div>
+                <div className="text-center mb-10">
+                    <span className='valorant-font text-2xl sm:text-4xl text-white valorant-border inline-block px-8 sm:px-16 py-3 glow-lavender'>POWERED BY</span>
+                </div>
                 <div className='w-full mt-6 sm:mt-10 flex justify-center items-center'>
                     {data.filter((f) => f.name === 'poweredby').map((d, id) => (
                         <div key={id}>
@@ -268,8 +277,11 @@ const Home = () => {
 
 
             {/* Section Sponsors Started */}
-            <div data-aos="fade-up" data-aos-duration="1000" className="bg-gray-900 py-20 -mb-2 sm:-mb-0">
-                <p className='text-center comfortaa text-gray-200 mt-10 text-xl sm:text-4xl'><span className='bg-gradient-to-br from-gray-500 via-gray-300 to-gray-200 rounded-lg text-md px-10 py-1 text-gray-900'>sponsorship</span></p>
+            <div data-aos="fade-up" data-aos-duration="1000" className="py-20 -mb-2 sm:-mb-0 relative">
+                <div className="geometric-decoration top-10 left-20" style={{animationDelay: '3s'}}></div>
+                <div className="text-center mb-10">
+                    <span className='valorant-font text-2xl sm:text-4xl text-white valorant-border inline-block px-8 sm:px-16 py-3 glow-pink'>SPONSORSHIP</span>
+                </div>
                 <Swiper
                     slidesPerView={5}
                     spaceBetween={1}
@@ -278,7 +290,7 @@ const Home = () => {
                     className="mySwiper w-full mt-6 sm:mt-10">
                     {data.filter((f) => f.name === 'sponsor').map((d, id) => (
                         <SwiperSlide key={id}>
-                            <img className='w-24' src={d.image} alt="" />
+                            <img className='w-24 hover:scale-110 transition-transform duration-300 glow-pink' src={d.image} alt="" />
                         </SwiperSlide>
                     ))}
                 </Swiper>
@@ -286,8 +298,11 @@ const Home = () => {
             {/* End Section Sponsors */}
 
             {/* Section Media Partner Started */}
-            <div data-aos="fade-up" data-aos-duration="1000" className="bg-gray-900 py-20 -mb-2 sm:-mb-0">
-                <p className='text-center comfortaa text-gray-200 mt-10 text-xl sm:text-4xl'><span className='bg-gradient-to-br from-gray-500 via-gray-300 to-gray-200 rounded-lg text-md px-10 py-1 text-gray-900'>media partner</span></p>
+            <div data-aos="fade-up" data-aos-duration="1000" className="py-20 -mb-2 sm:-mb-0 relative">
+                <div className="geometric-decoration bottom-20 right-10" style={{animationDelay: '5s'}}></div>
+                <div className="text-center mb-10">
+                    <span className='valorant-font text-2xl sm:text-4xl text-white valorant-border inline-block px-8 sm:px-16 py-3 glow-lavender'>MEDIA PARTNER</span>
+                </div>
                 <Swiper
                     slidesPerView={5}
                     spaceBetween={10}
@@ -297,7 +312,7 @@ const Home = () => {
                     className="mySwiper w-full mt-6 sm:mt-10">
                     {data.filter((f) => f.name === 'medpart').map((d, id) => (
                         <SwiperSlide key={id}>
-                            <img className='w-24' src={d.image} alt="" />
+                            <img className='w-24 hover:scale-110 transition-transform duration-300 glow-lavender' src={d.image} alt="" />
                         </SwiperSlide>
                     ))}
                 </Swiper>

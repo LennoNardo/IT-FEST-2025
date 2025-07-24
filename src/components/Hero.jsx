@@ -90,33 +90,36 @@ const Hero = ({ countdownTimeStamp }) => {
     }
 
     return (
-        <div className='bg-gradient-to-tl from-gray-900 via-gray-900 to-gray-700 min-h-screen flex justify-center items-center'>
+        <div className='relative min-h-screen flex justify-center items-center grid-bg overflow-hidden' style={{background: 'linear-gradient(135deg, #16213d 0%, #222222 100%)'}}>
+            <div className="geometric-decoration top-20 right-20"></div>
+            <div className="geometric-decoration bottom-20 left-20" style={{animationDelay: '3s'}}></div>
             <div className="flex flex-col items-center px-5">
-                <div className="text-white mb-4">
-                    <p className='text-lg md:text-xl comfortaa'>Selamat datang di</p>
-                    <p className='zaptron text-2xl md:text-6xl type' ><span ref={el}></span></p>
+                <div className="text-white mb-8 text-center">
+                    <p className='text-lg md:text-2xl comfortaa mb-4 text-glow-lavender'>Selamat datang di</p>
+                    <p className='valorant-font text-3xl md:text-7xl type text-glow-pink' ><span ref={el}></span></p>
+                    <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-400 mx-auto mt-4"></div>
                 </div>
-                <p className=' text-lg text-gray-400 sm:text-xl comfortaa mb-1'>Berakhir Dalam</p>
-                <div className="flex justify-evenly text-white comfortaa sm:text-2xl">
-                    <div className="text-center mr-3 bg-gray-700 rounded-lg p-3">
-                        <p>{nowDate.months}</p>
-                        <p>Bulan</p>
+                <p className='text-lg text-gray-300 sm:text-2xl valorant-font mb-6 text-glow-lavender'>Berakhir Dalam</p>
+                <div className="flex justify-center gap-4 text-white comfortaa text-lg sm:text-2xl">
+                    <div className="text-center valorant-card p-4 glow-pink">
+                        <p className="text-2xl sm:text-3xl font-bold text-pink-400">{nowDate.months}</p>
+                        <p className="text-sm valorant-font">Bulan</p>
                     </div>
-                    <div className="text-center mr-3 bg-gray-700 rounded-lg p-3">
-                        <p>{nowDate.days}</p>
-                        <p>Hari</p>
+                    <div className="text-center valorant-card p-4 glow-pink">
+                        <p className="text-2xl sm:text-3xl font-bold text-pink-400">{nowDate.days}</p>
+                        <p className="text-sm valorant-font">Hari</p>
                     </div>
-                    <div className="text-center mr-3 bg-gray-700 rounded-lg p-3">
-                        <p>{nowDate.hours}</p>
-                        <p>Jam</p>
+                    <div className="text-center valorant-card p-4 glow-pink">
+                        <p className="text-2xl sm:text-3xl font-bold text-pink-400">{nowDate.hours}</p>
+                        <p className="text-sm valorant-font">Jam</p>
                     </div>
-                    <div className="text-center mr-3 bg-gray-700 rounded-lg p-3">
-                        <p>{nowDate.minutes}</p>
-                        <p>Menit</p>
+                    <div className="text-center valorant-card p-4 glow-pink">
+                        <p className="text-2xl sm:text-3xl font-bold text-pink-400">{nowDate.minutes}</p>
+                        <p className="text-sm valorant-font">Menit</p>
                     </div>
-                    <div className="text-center mr-3 bg-gray-700 rounded-lg p-3">
-                        <p>{nowDate.seconds}</p>
-                        <p>Detik</p>
+                    <div className="text-center valorant-card p-4 glow-pink">
+                        <p className="text-2xl sm:text-3xl font-bold text-pink-400">{nowDate.seconds}</p>
+                        <p className="text-sm valorant-font">Detik</p>
                     </div>
                 </div>
             </div>
